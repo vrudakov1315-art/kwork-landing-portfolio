@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Форма — обложка проекта</title>
+    <style>
+      * { box-sizing: border-box; }
+      html, body { width: 100%; height: 100%; }
+      body {
+        margin: 0; overflow: hidden; color: #17191d; background-color: #f7f8fa;
+        background-image:
+          linear-gradient(rgba(49,87,255,.10) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(49,87,255,.10) 1px, transparent 1px);
+        background-size: 64px 64px;
+        font-family: "Arial Narrow", Arial, sans-serif;
+      }
+      .canvas { position: relative; width: 1920px; height: 1280px; }
+      .rail {
+        position: absolute; inset: 0 auto 0 0; width: 118px; background: #3157ff; color: white;
+        display: flex; align-items: center; justify-content: center;
+      }
+      .rail span {
+        white-space: nowrap; transform: rotate(-90deg);
+        font: 700 17px/1 Consolas, monospace; letter-spacing: .22em; text-transform: uppercase;
+      }
+      .index {
+        position: absolute; top: 58px; left: 166px; color: #3157ff;
+        font: 700 25px/1 Consolas, monospace;
+      }
+      h1 {
+        position: absolute; z-index: 5; top: 92px; left: 160px; margin: 0;
+        font: 900 152px/.84 "Arial Narrow", Arial, sans-serif;
+        letter-spacing: -.075em; text-transform: uppercase;
+      }
+      h1 span {
+        display: block; margin-left: 272px; color: transparent;
+        -webkit-text-stroke: 3px #3157ff;
+      }
+      .desktop {
+        position: absolute; top: 326px; left: 190px; width: 1370px; height: 834px;
+        margin: 0; padding: 38px 14px 14px; background: #22252b;
+        box-shadow: 34px 34px 0 rgba(49,87,255,.22);
+        transform: rotate(-1.2deg);
+      }
+      .desktop::before {
+        content: "●  ●  ●"; position: absolute; top: 10px; left: 18px;
+        color: #f7f8fa; font: 14px/1 Arial, sans-serif; letter-spacing: .45em;
+      }
+      .desktop img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+      .phone {
+        position: absolute; z-index: 6; top: 198px; right: 108px; width: 322px; height: 918px;
+        margin: 0; padding: 14px; background: white; border: 4px solid #17191d;
+        box-shadow: 24px 24px 0 #3157ff;
+      }
+      .phone img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+      .measure {
+        position: absolute; left: 164px; bottom: 46px; display: flex; gap: 30px; align-items: center;
+        color: #3157ff; font: 700 18px/1 Consolas, monospace; letter-spacing: .06em;
+      }
+      .measure::before { content: ""; width: 210px; border-top: 2px solid #3157ff; }
+      .caption {
+        position: absolute; z-index: 8; right: 126px; bottom: 58px;
+        padding: 17px 25px; color: white; background: #17191d;
+        font-size: 25px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="canvas">
+      <aside class="rail"><span>Студия ремонта · визуальный проект</span></aside>
+      <div class="index">A—01 / 1920×1280</div>
+      <h1>Форма <span>пространства</span></h1>
+      <figure class="desktop"><img src="./desktop.jpg" alt="" /></figure>
+      <figure class="phone"><img src="./mobile.jpg" alt="" /></figure>
+      <div class="measure">ПРОЕКТ / СМЕТА / РЕАЛИЗАЦИЯ</div>
+      <div class="caption">Адаптивный лендинг</div>
+    </main>
+  </body>
+</html>
