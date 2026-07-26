@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "test": "playwright test",
-    "capture": "node scripts/capture.mjs"
+    "capture": "node scripts/capture.mjs",
+    "logos": "node scripts/export-logos.mjs"
   },
   "devDependencies": {
     "@playwright/test": "^1.55.0"
