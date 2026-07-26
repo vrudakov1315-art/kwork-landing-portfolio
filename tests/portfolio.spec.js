@@ -140,3 +140,20 @@ for (const [slug, claims] of Object.entries(forbiddenClaims)) {
     }
   });
 }
+
+test("sever: название на обложке остаётся цельным словом", async ({ page }) => {
+  await page.goto("/sites/sever/kwork/cover.html");
+
+  const title = page.locator("h1");
+  await expect(title).toHaveText("Север");
+
+  const metrics = await title.evaluate((element) => {
+    const styles = getComputedStyle(element);
+    return {
+      height: element.getBoundingClientRect().height,
+      lineHeight: Number.parseFloat(styles.lineHeight),
+    };
+  });
+
+  expect(metrics.height).toBeLessThan(metrics.lineHeight * 1.25);
+});
