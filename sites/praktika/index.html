@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Демонстрационный лендинг курса по созданию убедительных презентаций."
+    />
+    <title>Практика — курс по визуальным презентациям</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">К содержанию</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Практика, на главную">
+        <span class="brand-mark" aria-hidden="true">П</span>
+        <span>практика</span>
+      </a>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Открыть меню"
+        aria-controls="praktika-site-nav"
+        aria-expanded="false"
+      >
+        <span></span><span></span>
+      </button>
+      <nav
+        class="site-nav"
+        id="praktika-site-nav"
+        aria-label="Основная навигация"
+        data-open="false"
+      >
+        <a href="#program">Программа</a>
+        <a href="#mentor">Преподаватель</a>
+        <a class="nav-cta" href="#enroll">Записаться</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow">Курс по визуальным презентациям</p>
+          <h1>Навык, который становится практикой</h1>
+          <p class="hero-lead">
+            За шесть недель соберите рабочую систему: от чистого тезиса до
+            уверенной защиты перед аудиторией.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#enroll">Начать практику</a>
+            <span class="start-note">Старт потока · 18 августа</span>
+          </div>
+        </div>
+        <figure class="hero-visual">
+          <img
+            src="./assets/workspace.jpg"
+            alt="Рабочий стол с тетрадью, планшетом и палитрой цветов"
+            width="1600"
+            height="1067"
+          />
+          <figcaption>
+            <span>01—06</span>
+            Шесть недель. Шесть решений.
+          </figcaption>
+        </figure>
+        <p class="hero-stamp" aria-hidden="true">делать → показывать</p>
+      </section>
+
+      <section class="results" id="results">
+        <div class="section-heading">
+          <p class="eyebrow">После курса</p>
+          <h2>Не набор приёмов.<br />Рабочая привычка.</h2>
+        </div>
+        <div class="result-grid">
+          <article class="result-card result-card-wide">
+            <span class="result-index">А</span>
+            <h3>Удерживать мысль</h3>
+            <p>
+              Выстроите логику, которую легко считать со слайда и пересказать
+              после встречи.
+            </p>
+          </article>
+          <article class="result-card result-card-coral">
+            <span class="result-index">Б</span>
+            <h3>Убирать лишнее</h3>
+            <p>Научитесь редактировать текст, графику и собственные решения.</p>
+          </article>
+          <article class="result-card result-card-blue">
+            <span class="result-index">В</span>
+            <h3>Защищать уверенно</h3>
+            <p>Подготовите подачу и ответы на вопросы без заученного сценария.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="program" id="program">
+        <div class="section-heading program-heading">
+          <p class="eyebrow">Программа</p>
+          <h2>Шесть шагов<br />от черновика к защите</h2>
+          <p>
+            Открывайте модули по порядку или возвращайтесь к нужному инструменту.
+          </p>
+        </div>
+        <div class="program-list">
+          <article class="program-item">
+            <button
+              type="button"
+              aria-expanded="true"
+              aria-controls="module-1"
+            >
+              <span class="module-number">01</span>
+              <span class="module-title">Тезис и аудитория</span>
+              <span class="module-duration">4 урока</span>
+              <span class="module-icon" aria-hidden="true"></span>
+            </button>
+            <div class="program-panel" id="module-1">
+              <p>
+                Формулируем одну ясную мысль, определяем контекст и собираем
+                карту вопросов аудитории.
+              </p>
+            </div>
+          </article>
+          <article class="program-item">
+            <button
+              type="button"
+              aria-expanded="false"
+              aria-controls="module-2"
+            >
+              <span class="module-number">02</span>
+              <span class="module-title">Сценарий</span>
+              <span class="module-duration">5 уроков</span>
+              <span class="module-icon" aria-hidden="true"></span>
+            </button>
+            <div class="program-panel" id="module-2">
+              <p>
+                Собираем драматургию выступления и превращаем список фактов в
+                последовательный рассказ.
+              </p>
+            </div>
+          </article>
+          <article class="program-item">
+            <button
+              type="button"
+              aria-expanded="false"
+              aria-controls="module-3"
+            >
+              <span class="module-number">03</span>
+              <span class="module-title">Композиция</span>
+              <span class="module-duration">6 уроков</span>
+              <span class="module-icon" aria-hidden="true"></span>
+            </button>
+            <div class="program-panel" id="module-3">
+              <p>
+                Строим сетку, управляем иерархией и направляем внимание без
+                декоративного шума.
+              </p>
+            </div>
+          </article>
+          <article class="program-item">
+            <button
+              type="button"
+              aria-expanded="false"
+              aria-controls="module-4"
+            >
+              <span class="module-number">04</span>
+              <span class="module-title">Текст и данные</span>
+              <span class="module-duration">5 уроков</span>
+              <span class="module-icon" aria-hidden="true"></span>
+            </button>
+            <div class="program-panel" id="module-4">
+              <p>
+                Сокращаем формулировки и выбираем честную, читаемую форму для
+                цифр, сравнений и выводов.
+              </p>
+            </div>
+          </article>
+          <article class="program-item">
+            <button
+              type="button"
+              aria-expanded="false"
+              aria-controls="module-5"
+            >
+              <span class="module-number">05</span>
+              <span class="module-title">Визуальный язык</span>
+              <span class="module-duration">4 урока</span>
+              <span class="module-icon" aria-hidden="true"></span>
+            </button>
+            <div class="program-panel" id="module-5">
+              <p>
+                Настраиваем типографику, цвет и изображения так, чтобы они
+                поддерживали смысл и узнаваемость.
+              </p>
+            </div>
+          </article>
+          <article class="program-item">
+            <button
+              type="button"
+              aria-expanded="false"
+              aria-controls="module-6"
+            >
+              <span class="module-number">06</span>
+              <span class="module-title">Репетиция защиты</span>
+              <span class="module-duration">3 урока</span>
+              <span class="module-icon" aria-hidden="true"></span>
+            </button>
+            <div class="program-panel" id="module-6">
+              <p>
+                Проводим финальный прогон, проверяем темп и готовим ответы на
+                сложные вопросы.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="format" id="format">
+        <div class="format-photo">
+          <img
+            src="./assets/practice-session.jpg"
+            alt="Команда обсуждает презентацию за ноутбуком"
+            width="1600"
+            height="1067"
+            loading="lazy"
+          />
+          <span class="photo-label">Разбор в малой группе</span>
+        </div>
+        <div class="format-copy">
+          <p class="eyebrow">Формат</p>
+          <h2>70% — делать.<br />30% — смотреть.</h2>
+          <ul class="format-list">
+            <li><strong>2</strong><span>занятия в неделю по 90 минут</span></li>
+            <li><strong>12</strong><span>человек в учебной группе</span></li>
+            <li><strong>1</strong><span>личная рецензия на итоговую работу</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="mentor" id="mentor">
+        <div class="mentor-copy">
+          <p class="eyebrow">Преподаватель</p>
+          <h2>Лера Миронова</h2>
+          <p class="fiction-label">Вымышленный персонаж для демонстрации</p>
+          <p class="mentor-lead">
+            Арт-директор учебных проектов. Объясняет решения через задачу,
+            помогает увидеть слабое место и не переделывает работу за студента.
+          </p>
+          <blockquote>
+            «Хороший слайд не украшает мысль — он помогает ей состояться».
+          </blockquote>
+        </div>
+        <figure class="mentor-photo">
+          <img
+            src="./assets/mentor.jpg"
+            alt="Портрет женщины в деловом костюме — образ вымышленного преподавателя"
+            width="1400"
+            height="1750"
+          />
+          <figcaption>Образ курса / не реальный преподаватель</figcaption>
+        </figure>
+      </section>
+
+      <section class="tariff" id="tariff">
+        <div class="tariff-intro">
+          <p class="eyebrow">Тариф</p>
+          <h2>Один формат.<br />Всё нужное внутри.</h2>
+          <p>
+            Без уровней доступа и доплат: вы получаете общий темп группы,
+            обратную связь и время на свою работу.
+          </p>
+        </div>
+        <article class="price-card">
+          <p class="price-label">Практика · 6 недель</p>
+          <p class="price">24 900 <span>₽</span></p>
+          <ul>
+            <li>27 коротких уроков</li>
+            <li>12 живых встреч</li>
+            <li>Проверка шести заданий</li>
+            <li>Финальная защита проекта</li>
+          </ul>
+          <a class="button button-light" href="#enroll">Оставить заявку</a>
+          <p class="price-note">Демонстрационная стоимость для макета</p>
+        </article>
+      </section>
+
+      <section class="enroll" id="enroll">
+        <div class="enroll-heading">
+          <p class="eyebrow">Запись</p>
+          <h2>Принесите задачу.<br />Унесите систему.</h2>
+          <p>
+            Оставьте контакты — форма покажет демонстрационное подтверждение и
+            не отправит данные на сервер.
+          </p>
+        </div>
+        <form id="course-form" novalidate>
+          <label>
+            <span>Как вас зовут</span>
+            <input
+              type="text"
+              name="name"
+              autocomplete="name"
+              placeholder="Имя"
+            />
+          </label>
+          <label>
+            <span>Почта или телефон</span>
+            <input
+              type="text"
+              name="contact"
+              autocomplete="email"
+              placeholder="hello@example.com"
+            />
+          </label>
+          <label class="consent">
+            <input type="checkbox" name="consent" checked />
+            <span>Согласен на обработку данных в рамках демонстрации</span>
+          </label>
+          <button class="button button-primary" type="submit">
+            Записаться на курс
+          </button>
+          <p class="form-message" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="#top">
+        <span class="brand-mark" aria-hidden="true">П</span>
+        <span>практика</span>
+      </a>
+      <p>Демонстрационный концепт</p>
+      <a href="#top">Наверх ↑</a>
+    </footer>
+  </body>
+</html>

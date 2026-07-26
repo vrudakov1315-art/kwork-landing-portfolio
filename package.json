@@ -1,0 +1,12 @@
+{
+  "name": "kwork-landings",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "capture": "node scripts/capture.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0"
+  }
+}
